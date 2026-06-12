@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="weather.css">
+    <!-- add in your HTML head -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="main_container">
@@ -13,9 +15,27 @@
         <div class="container">
          
             <div class="input">
-                <input type="text" name="location" id="location" placeholder="Enter Location">
+
+                <input type="text" name="city" id="city" placeholder="Enter city">
+                
+                <input type="text" name="country" id = "country" placeholder="Enter Country">
             <button type="button">Search</button>
             </div>
+        </div>
+        <div class="result">
+            <div class="temp">  
+                <p>Temerature : _______</p>
+            </div>
+            <div class="humidity">
+                <p>Humidity : ________</p>
+            </div>
+            <div class="wind">
+                <p>
+                    Wind : ________
+                </p>
+            </div>
+
+
         </div>
     </div>
     

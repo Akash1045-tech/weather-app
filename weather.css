@@ -3,10 +3,11 @@
     padding : 0 ;
     margin : 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 /* container containing everthing */
 .main_container{
-    background-color: #93F9B9;
+     background: linear-gradient(135deg, #1a1a2e, #16213e);
     min-height: 100vh;
     padding : 1rem ;
     margin : 0 auto ;
@@ -17,9 +18,12 @@
 
     
 }
+h1{
+    color : white ;
+}
 /* contianer containg input */
 .container{
-    max-width: 500px ;
+    max-width: 1000px ;
     margin : 0 auto ;
 display: flex;
 flex-direction: column;
@@ -29,9 +33,30 @@ gap : 1rem ;
 
 }
 /* setting input style */
-.input input ,  button{
-    border-radius: 5px ;
-    padding : 0.25rem ;
+.input input ,  .input button{
+    border : none ;
+    padding : 0.6rem 1rem  ;
 
+
+}
+.input{
+    width: 100% ;
+    display: flex;
+  
+    flex-wrap: wrap;
+    gap : 1rem ;
+}
+.result{
+    color : white ;
+    
+    display: grid;
+    gap : 2rem ;
+
+}
+.temp , .wind ,.humidity{
+    border: 2px solid white;
+    border-radius: 10px;
+    padding : 1rem ;
+    
 
 }
