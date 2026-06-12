@@ -1,7 +1,7 @@
 // settingup varialbes 
 
 let button = document.querySelector(".input button");
-const apiKey = `6110c57ceb5e73ab736b6b45e4f4b059` ;
+const apiKey = `APIKEY` ;
 let temp = document.querySelector(".temp p");
 let humidity = document.querySelector(".humidity p");
 let wind = document.querySelector(".wind p");
