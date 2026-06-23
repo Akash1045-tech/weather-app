@@ -46,17 +46,42 @@ gap : 1rem ;
     flex-wrap: wrap;
     gap : 1rem ;
 }
+.otherData{
+    display: flex;
+    gap : 2rem ;
+
+}
+.card{
+    padding : 2rem ;
+}
+.temp{
+    text-align: center;
+}
+.img{
+    text-align: center;
+}
 .result{
     color : white ;
+    flex-direction: column;
+
+    display: flex;
+    justify-content: center;
+
+
+
     
-    display: grid;
+    
+
     gap : 2rem ;
 
 }
 .temp , .wind ,.humidity{
     border: 2px solid white;
     border-radius: 10px;
-    padding : 1rem ;
+    
     
 
+}
+.img img{
+    width : 200px ;
 }
