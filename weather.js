@@ -1,7 +1,8 @@
 // settingup varialbes 
 let img = document.querySelector(".img img");
+let description = document.querySelector(".img p");
 let button = document.querySelector(".input button");
-const apiKey = `APIKEY` ;
+const apiKey = `6110c57ceb5e73ab736b6b45e4f4b059` ;
 let temp = document.querySelector(".temp p");
 let humidity = document.querySelector(".humidity p");
 let wind = document.querySelector(".wind p");
@@ -28,10 +29,14 @@ let country = document.querySelector("#country").value.trim();
       .then((data)=>{
          console.log(data);
            let iconCode = data.weather[0].icon;
+           let des = data.weather[0].description ;
+
           img.src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+          description.textContent = `${des}`
          wind.textContent = `Wind : ${data.wind.speed}m/s`;
          humidity.textContent = `Humidity : ${data.main.humidity}%` ;
          temp.textContent = `Temperature : ${data.main.temp}°C` ;
+         console.log(data);
          
       })
       .catch((e)=>{
